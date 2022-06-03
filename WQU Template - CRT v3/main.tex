@@ -1,0 +1,194 @@
+% ===========================================================
+% Document compiled by Tea Toradze
+% WQU TeX templates repository can be found on https://github.com/teator
+% ===========================================================
+
+% Document layout and margin sizes
+\documentclass[a4paper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={160mm,260mm},
+    left=23mm,
+    top=23mm,
+    headheight=30pt,
+    includeheadfoot
+}
+
+% Classes and packages
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{comment}
+\usepackage{lastpage}
+
+
+% Define custom gray colour (used in minted background)
+\usepackage[dvipsnames]{xcolor}
+\definecolor{Lgray}{gray}{0.9}
+
+% Minted package to render code snippets
+\usepackage{minted}
+\usemintedstyle{borland}
+
+% Bibliography style
+\usepackage[
+    bibstyle=authoryear,
+    style=verbose-ibid,
+    backend=biber,
+    maxnames = 5
+    ]{biblatex}
+\addbibresource{reference.bib}
+
+% Hyper-reference style (required for URL and footer citations)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\urlstyle{same}
+
+% ===========================================================
+% Document title, author, heading, etc
+% Please replace *Course Title* and *M No.* with relevant course and module number
+\title{
+    \includegraphics[width=5cm]{wqu.png} \\ 
+    \Large \vspace{0.3cm} *Course Title*  \\ 
+    \vspace{0.3cm} Collaborative Review Task *M No.*
+}
+\author{*Anon*}  % CRT works should be left anonymous. Do not insert author or insert 'Anonymous' or 'WQU student'. 
+\date{\today}
+
+
+% Header and footer
+% Please replace *Course Title* and *M No.* with relevant course and module number
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{
+    *Course Title*  \\
+    Collaborative Review Task *M No.*
+}
+\cfoot{\footnotesize Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1pt}
+
+
+% ===========================================================
+% Beginning of Document
+\begin{document}
+\maketitle
+
+% Area to insert question (optional) and preferably in smaller size font
+\footnotesize
+\slshape
+\subsection*{Questions}
+
+Replace this text with problem set or project requirements: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\begin{enumerate}
+    \item Task 1;
+    \item Task 2;
+    \item Task 3;
+    \item Task 4;
+    \item Task 5.
+\end{enumerate}
+
+\ 
+
+% Beginning of Answer's section with normal size font
+\normalsize
+\normalfont
+\subsection*{Solutions}
+
+Complete transcript of source code is provided at the end of this document.
+
+\ 
+
+\textbf{Task 1:}
+
+Replace this text with own answer to question: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% example citations
+Example Book \autocite{Shreve2} citation. Example Textbook \autocite{WQUDFT5} citation.
+Example Article \autocite{Tapa2016} citation.
+Example URL or Internet source \autocite{Investopedia} citation.
+
+
+\ 
+
+\textbf{Task 2:}
+
+Replace this text with own answer to question: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Example code snippet:
+
+\inputminted[
+    firstline=31, 
+    lastline=41, 
+    bgcolor=Lgray, 
+    linenos, 
+    firstnumber=31, 
+    fontsize=\footnotesize
+    ]{python}{gw1_wqu_mlif_groupwork_sub1.py}
+
+
+
+\ 
+
+\textbf{Task 3:}
+
+Replace this text with own answer to question: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Example code snippet:
+
+\inputminted[
+    firstline=44, 
+    lastline=56, 
+    bgcolor=Lgray, 
+    linenos, 
+    firstnumber=44, 
+    fontsize=\footnotesize
+    ]{python}{gw1_wqu_mlif_groupwork_sub1.py}
+
+
+\ 
+
+\textbf{Task 4:}
+
+
+
+\ 
+
+\textbf{Task 5:}
+
+
+
+% ===========================================================
+% Appendix
+\newpage
+\section*{Appendix: Source code}
+
+\inputminted[
+    firstline=1, 
+    lastline=111, 
+    bgcolor=Lgray, 
+    linenos, 
+    firstnumber=1, 
+    fontsize=\footnotesize
+    ]{python}{gw1_wqu_mlif_groupwork_sub1.py}
+
+
+% ===========================================================
+% Bibliography
+\vspace{1cm}
+\newpage
+\printbibliography
+
+% ===========================================================
+% End of Document
+\end{document}
