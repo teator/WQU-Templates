@@ -1,0 +1,153 @@
+% ===========================================================
+% Document compiled by Tea Toradze
+% WQU TeX templates repository can be found on https://github.com/teator/WQU-Templates
+% ===========================================================
+
+
+% Document layout and margin sizes
+\documentclass[a4paper, 11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={160mm, 260mm},
+    left=25mm,
+    top=20mm,
+    headheight=10pt,
+    includeheadfoot,
+    footskip=10mm
+}
+
+% Classes and packages
+\usepackage{enumitem}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{csquotes}
+\usepackage{comment}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{float}
+\usepackage{lastpage}
+
+% Define custom gray colour (used in minted background)
+\usepackage[dvipsnames]{xcolor}
+\definecolor{Lgray}{gray}{0.9}
+\definecolor{Logray}{gray}{0.75}
+
+% Minted package to render code snippets
+\usepackage{minted}
+\usemintedstyle{borland}
+
+% Bibliography style
+\usepackage[
+    bibstyle=authoryear,
+    citestyle=verbose-ibid,
+    autocite=footnote,
+    backref=true,
+    maxnames = 3
+    ]{biblatex}
+\addbibresource{reference.bib}
+
+% Hyper-reference style (required for URL and footer citations)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    allcolors=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\urlstyle{same}
+
+
+% ===========================================================
+% Beginning of Document
+\begin{document}
+
+% Header
+\begin{center}
+    \vspace*{-3.9cm} \hspace*{-2.3cm} \includegraphics[width=20.6cm]{header.png}
+\end{center}
+
+% Title (Please replace *No.* and *reviewer's name and email* with group number and reviewer's details)
+\vspace*{11cm}
+\begin{flushright}
+    \Huge \textcolor{blue}{PEER REVIEW \\ for Group *No.* Project Proposal}
+    
+    \vspace*{0.5cm} \Large MScFE Capstone Project
+    
+    \vspace*{1.5cm} \large 
+    \textcolor{blue}{Group *No.* \\ 
+        *reviewer student 1 name and email* \\ 
+        *reviewer student 2 name and email* \\ 
+        *reviewer student 3 name and email* \\
+    }
+    
+    \vspace*{0.5cm} \today
+\end{flushright}
+\vspace*{1cm} \newpage
+
+
+% ===========================================================
+% - - - - -  Introducation  - - - - -
+\section*{\textcolor{blue}{Introducation:}}
+
+Please replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+\ 
+% - - - - -  SWOT ANALYSIS  - - - - -
+\section*{\textcolor{blue}{SWOT ANALYSIS}}
+
+% - - - - -  Strength  - - - - -
+\section*{\textcolor{blue}{Strength}}
+
+Please replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+\ 
+% - - - - -  Weakness  - - - - -
+\section*{\textcolor{blue}{Weakness}}
+
+Please replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+\ 
+% - - - - -  Opportunity  - - - - -
+\section*{\textcolor{blue}{Opportunity}}
+
+Please replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+\ 
+% - - - - -  Threat  - - - - -
+\section*{\textcolor{blue}{Threat}}
+
+Please replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+\ 
+% - - - - -  Summary  - - - - -
+\section*{\textcolor{blue}{Summary recommendations}}
+
+Please replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\ 
+
+% ===========================================================
+% - - - - -  Bibliography  - - - - -
+\vspace{1cm}
+\section*{\textcolor{blue}{Bibliography} }
+\printbibliography[heading=none]
+
+% ===========================================================
+% End of Document
+\end{document}
