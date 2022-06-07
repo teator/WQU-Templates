@@ -8,4 +8,4 @@ Please download entire content of this folder onto your PC. Then you can use the
 
 You can familiarise youreself with basics of LaTeX how to guide at [Overleaf Documentation](https://www.overleaf.com/learn)
 
-A preview of the template is available as [main.pdf](main.pdf).
+A preview of the template is available [here](https://docs.google.com/viewer?url=https://raw.githubusercontent.com/teator/WQU-Templates/main/WQU%20Template%20-%20CRT%20v1/main.pdf)
