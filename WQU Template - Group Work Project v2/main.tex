@@ -1,0 +1,342 @@
+% ===========================================================
+% Document compiled by Tea Toradze
+% WQU TeX templates repository can be found on https://github.com/teator/WQU-Templates
+% ===========================================================
+
+% Document layout and margin sizes
+\documentclass[a4paper, 10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={165mm,265mm},
+    left=20mm,
+    top=20mm,
+    headheight=30pt,
+    includeheadfoot
+}
+
+% Classes and packages
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{lastpage}
+\usepackage{minted}
+\usepackage{csquotes}
+\usepackage{multicol}
+\setlength{\columnsep}{0.7cm}
+
+% Define custom gray colour (used in minted background)
+\usepackage[dvipsnames]{xcolor}
+\definecolor{Lgray}{gray}{0.9}
+
+% Minted package to render code snippets
+\usemintedstyle{borland}
+
+% Bibliography style
+\usepackage[
+    bibstyle=authoryear,
+    style=verbose-ibid,
+    backend=biber,
+    maxnames = 5,
+    backref=true  % comment out this line to remove back-references
+    ]{biblatex}
+\addbibresource{reference.bib}
+
+% Hyper-reference style (required for URL and footer citations)
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+\urlstyle{same}
+
+% ===========================================================
+% Document title, author, heading, etc
+% Please replace *Course Title* and *No.* with relevant course and number
+\title{
+    \includegraphics[width=7cm]{wqu_logo.png} \\ 
+    \vspace{0.3cm} \Large *Course Title* \\
+    \vspace{0.3cm}  Group Work Project 
+}
+\author{
+    \large Timezone Group *No.*   \ :: \ Submission *No.*
+    % comment/uncomment next line for 'Draft' note to appear
+    \textcolor{red}{ \  -= Draft =- }
+}
+\date{\today}
+
+
+% Header and footer
+% Please replace *Course Title* and *No.* with relevant course and module number
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{ 
+    \textsc{WorldQuant University}  \\ 
+    *Course Title* 
+}
+\rhead{
+    Group Work Project \\ 
+    Timezone Group *No.* :: Submission *No.*
+}
+\cfoot{\footnotesize Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1pt}
+
+
+% ===========================================================
+% Beginning of Document
+\begin{document}
+\maketitle
+
+% List of group members
+\textbf{Group members:} 
+*Student 1 name and email*,
+*Student 2 name and email*,
+*Student 3 name and email*.
+
+\begin{center}
+\footnotesize
+\begin{tabular}{|l|l|l|} \hline
+    Submission 1 contributors & Submission 2 contributors & Submission 3 contributors  \\ \hline
+    *Student 1 name and email*  &   &   \\
+    *Student 1 name and email*  &   &   \\
+    *Student 1 name and email*  &   &   \\  \hline
+\end{tabular}
+\end{center}
+
+\vspace*{0.5cm}
+
+This group work project is an essential assignment required in the *Course Title* course of the Worldquant University Master's degree program in Financial Engineering and consists of a three-part submission reports.
+
+% Table of Contents
+\tableofcontents
+\citetrackerfalse
+
+
+% ===========================================================
+% - - - - - - -  Submission 1 - - - - - - - 
+
+% comment/uncomment next line and corresponding \end{comment} line below to hide/show this submission
+%\begin{comment}
+\newpage
+\section{Submission 1: *Title* }
+
+\textbf{Abstract: } Replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\ 
+
+% You should provide complete source code in Appendix for computationally heavy projects
+The complete source code is provided in the Appendix at the end of this document.
+\vspace{0.5cm}
+
+% Beginning of multi-column
+\begin{multicols*}{2}
+% - - - - - - -  Subsection  - - - - - - -
+\subsection{*Subsection title*}
+
+Replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+% example citations
+Example Book \autocite{Shreve2} citation. Example Textbook \autocite{WQUDFT5} citation.
+Example Article \autocite{Tapa2016} citation.
+Example URL or Internet source \autocite{Investopedia} citation.
+
+% example code snippet
+Example code snippet:
+
+\inputminted[
+    firstline=31, 
+    lastline=41, 
+    bgcolor=Lgray, 
+    linenos, 
+    firstnumber=31, 
+    fontsize=\footnotesize
+    ]{python}{example_code.py}
+
+
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+Replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+Replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+
+
+
+% - - - - - - -  Conclusion  - - - - - - -
+\vspace{0.3cm}
+\subsection{Conclusion}
+
+Replace this text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+
+% End of multi-column
+\end{multicols*}
+% - - - - - - - Submission 1 - End - - - - - - -
+%\end{comment}
+
+
+% ===========================================================
+% - - - - - - -  Submission 2 - - - - - - - 
+
+% comment/uncomment next line and corresponding \end{comment} line below to hide/show this submission
+% \begin{comment}
+\newpage
+\section{Submission 2: *Title*}
+
+\textbf{Abstract: }
+
+
+
+
+% Beginning of multi-column
+\begin{multicols*}{2}
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+
+
+
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+
+
+
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+
+
+
+% End of multi-column
+\end{multicols*}
+% - - - - - - - Submission 2 - End - - - - - - -
+% \end{comment}
+
+
+% ===========================================================
+% - - - - - - - Submission 3 - - - - - - -
+
+% comment/uncomment next line and corresponding \end{comment} line below to hide/show this submission
+%\begin{comment}
+\newpage
+\section{Submission 3: *Title* }
+
+\textbf{Abstract: }
+
+
+
+% Beginning of multi-column
+\begin{multicols*}{2}
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+
+
+
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+
+
+
+% - - - - - - -  Subsection  - - - - - - -
+\vspace{0.3cm}
+\subsection{*Subsection title*}
+
+
+
+
+% End of multi-column
+\end{multicols*}
+% - - - - - - - Submission 3 - End - - - - - - -
+%\end{comment}
+
+
+% ===========================================================
+% - - - - - - - Appendix - - - - - - -
+\newpage
+\addcontentsline{toc}{section}{Appendix: Source codes }
+\section*{Appendix: Source codes}
+
+% - - - - - - -  Source code 1  - - - - - - -
+%\begin{comment}
+\subsection*{Appendix 1 : Source code for submission 1 }
+
+\inputminted[
+    firstline=1, 
+    lastline=111, 
+    bgcolor=Lgray, 
+    linenos, 
+    firstnumber=1, 
+    fontsize=\footnotesize
+    ]{python}{example_code.py}
+    
+%\end{comment}
+
+
+% - - - - - - - Source code 2 - - - - - - -
+% \begin{comment}
+\subsection*{Appendix 2 : Source code for submission 2 }
+
+\inputminted[
+    firstline=1, 
+    lastline=111, 
+    bgcolor=Lgray, 
+    linenos, 
+    firstnumber=1, 
+    fontsize=\footnotesize
+    ]{python}{*code file*}  % insert file name
+    
+% \end{comment}
+
+
+% - - - - - - - Source code 3 - - - - - - -
+%\begin{comment}
+\subsection*{Appendix 3 : Source code for submission 3 }
+
+\inputminted[
+    firstline=1, 
+    lastline=111, 
+    bgcolor=Lgray, 
+    linenos, 
+    firstnumber=1, 
+    fontsize=\footnotesize
+    ]{python}{*code file*}  % insert file name
+    
+%\end{comment}
+
+
+% ===========================================================
+% Bibliography
+\vspace{1cm}
+\newpage
+\printbibliography
+
+% ===========================================================
+% End of Document
+\end{document}
