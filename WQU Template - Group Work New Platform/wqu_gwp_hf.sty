@@ -1,0 +1,43 @@
+\ProvidesPackage{wqu_gwp_hf}
+% Define header and footer style
+
+\setlength{\droptitle}{-4em}     % Eliminate the default vertical space
+\addtolength{\droptitle}{-4pt}
+% No need to modify this. The information are taken from above
+\title{\includegraphics[width=10cm]{wqu_logo.png}\\[0.5cm]\MakeUppercase{\qquad\qquad\gwpmodule{}:\newline\gwptitle{}}}
+% No need to modify this. The information are taken from above
+\author{Authors: \authone{} \ifcont{\theconttwo}{ \& \authtwo{}}{} \ifcont{\thecontthree}{ \& \auththree{}}{}}
+\makeatletter
+\let\runauthor\@author
+\makeatother
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\gwpmodule{}}
+\lhead{
+    \gwptitle{}\\
+    \gwpgroup{}%
+}
+%\cfoot{\footnotesize Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{1pt}
+
+% Define box 
+\usepackage[most]{tcolorbox}
+
+% Create box for cover white background, min height 2cm, max 5cm. Modify this if needed
+\newtcolorbox{wqubox}[1][colback=white]{%
+    sharp corners, height from=2cm to 5cm, #1
+}
+
+% Command to print word count
+\newcommand\wordcount{\input{wqu-words.sum}}
+\newcommand\wordcounts{\input{wqu-heads.sum}}
+\newcommand\wordcountt{\input{wqu-text.sum}}
+
+% Keywords command from https://it.overleaf.com/latex/templates/abstract-keywords-and-references/xsfshwnhyynd
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords: }} #1
+}

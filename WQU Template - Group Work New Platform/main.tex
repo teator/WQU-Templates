@@ -1,0 +1,133 @@
+% ===========================================================
+% Document compiled by Tea Toradze and Andrea Dalseno 
+% WQU TeX templates repository can be found on https://github.com/teator/WQU-Templates
+% ===========================================================
+
+% Document layout and margin sizes
+\documentclass{wqu_class_fp}
+
+% ===========================================================
+% Customize variables
+
+% Insert the required information 
+\def\gwpmodule{MScFE 0000 Moudle Name} %Module Number and Name
+\def\gwptitle{Work Title} % work title
+\def\gwpgroup{Group 99} % group number
+
+
+% Define authors
+\def\authone{Author 1}% Insert Name and Surname
+\def\authtwo{Author 2}
+\def\auththree{Author 3}
+
+% Define country
+\def\countryone{Country 1}
+\def\countrytwo{Country 2}
+\def\countrythree{Country 3}
+
+% Define email
+\def\emailone{email1@example.com}
+\def\emailtwo{email2@example.com}
+\def\emailthree{email3@example.com}
+
+% Define non contributing members
+\newcounter{contone} % Do not modify this
+\newcounter{conttwo} % Do not modify this
+\newcounter{contthree} % Do not modify this
+
+\setcounter{contone}{1} % set to 0 for non contributing member -> \setcounter{contone}{0}
+\setcounter{conttwo}{1}
+\setcounter{contthree}{1}
+
+% ===========================================================
+
+% ===========================================================
+% Header and footer
+\usepackage{wqu_gwp_hf} % header and footer styling
+% ===========================================================
+% Beginning of Document
+\begin{document}
+
+% ================= Instructions ============================
+\begin{comment}
+1. Fill the required data into the  variables above and they will be automatically inserted in the right places
+2. Use Overleaf or your local LaTeX compiler to produce the PDF
+3. This page is a comment and won't show up in your PDF 
+
+
+Where applicable, keep in mind the following:
+- Make sure you address all the questions in the GWP assignment document published in the Course Overview, along with this template.
+
+- To avoid an increase in the Turnitin similarity score, DO NOT copy the questions from the GWP assignment document.
+
+- Use the same font type and size and same format throughout your report. You can use Calibri 11, Arial 10, or Times 11.
+
+- Do NOT split charts, graphs, and tables between two separate pages.
+
+- Always include the axes labels and scales in your graphs as well as an explanation of how the data should be read.
+
+- Use the MLA format for references, both for in-text citations and works cited at the end of the report. You can find the rules in the Purdue Online Writing Lab.
+
+- Use the LIRN Library for your research. It can be accessed via the left navigation pane inside the WQU learning platform.
+
+- For your submission, follow the “Submission requirements and format’ instructions included in each Group Work Project Assignment.
+
+
+In general, the PDF file with your report must be uploaded separately from the zipped folder that includes any other types of files. This allows Turnitin to generate a similarity report.
+\end{comment}
+% ================= End Comment ============================
+
+% ===========================================================
+% Main document
+% ===========================================================
+
+\vspace*{10px}
+\begin{center}
+\includegraphics[width=10cm]{wqu_logo.png}
+\end{center}
+\bigskip
+\begin{center}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{ |c|c|c|c|}
+ \hline
+\rowcolor{DarkBlue}
+ \textcolor{white}{\textbf{Full Legal Name}} & \textcolor{white}{\textbf{Location (Country)}} & \textcolor{white}{\textbf{Email address}} &%
+ \shortstack{\textcolor{white}{\textbf{Non-Contributing}} \\ \textcolor{white}{\textbf{Member (X)}}}\\ 
+ \hline
+ \authone{} & \countryone{} & \emailone{} &\ifcont{\thecontone}{}{X}\\
+ \authtwo{} & \countrytwo{} & \emailtwo{} &\ifcont{\theconttwo}{}{X}\\  
+ \auththree{} & \countrythree{} & \emailthree{} &\ifcont{\thecontthree}{}{X}\\  
+ \hline
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\vspace{50pt}
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{ |l|l|}
+ \hline
+\rowcolor{DarkBlue}
+ \multicolumn{2}{l|}{\shortstack[l]{\\[5pt]\textcolor{white}{\textbf{Statement of integrity}: By typing the names of all group members in the text}\\ \textcolor{white}{box below, you confirm that the assignment submitted is original work produced by}\\ \textcolor{white}{the group (excluding any non-contributing members identified with an “X” above).}}}\\[5pt]
+ \hline
+  \cellcolor{gray!20}Team member 1 & \ifcont{\thecontone}{\authone{}}{}\\
+ \cellcolor{gray!20}Team member 2 & \ifcont{\theconttwo}{\authtwo{}}{} \\  
+ \cellcolor{gray!20}Team member 3 & \ifcont{\thecontthree}{\auththree{}}{} \\  
+ \hline
+\end{tabular}
+\end{adjustbox}
+
+\vspace{50pt}
+
+\begin{adjustbox}{width=\textwidth}
+\begin{tabular}{ |l|}
+ \hline
+\rowcolor{DarkBlue}
+{\shortstack[l]{\\[5pt]\textcolor{white}{Use the box below to explain any attempts to reach out to a non-contributing member.}\\ \textcolor{white}{Type (N/A) if all members contributed.}\\ \textcolor{white}{\textbf{Note:} you may be required to provide proof of your outreach to non-contributing}\\ \textcolor{white}{members upon request.}}}\\[5pt]
+ \hline
+  {N/A}\\[50 pt]% write your text here if needed
+ \hline
+\end{tabular}
+\end{adjustbox}
+
+% ===========================================================
+% End of Document
+\end{document}
