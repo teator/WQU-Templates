@@ -1,8 +1,8 @@
 # How to use this template
 [Download the file](./examples/frontpage/front_page_gwp.zip), unzip it and compile it using your local LaTeX editor or, recommended, upload the zipped file and open it using [Overleaf](https://www.overleaf.com?r=049a7499&rm=d&rs=b).
 
-Fill the variables with the required information (e.g.):
-% Insert the required information 
+Fill the variables in main.tex file, with the required information (e.g.):<br>
+% Insert the required information <br>
 \def\gwpmodule{MScFE 600 Financial Data} %Module Number and Name<br>
 \def\gwptitle{Example title} % work title<br>
 \def\gwpgroup{Group 25} % group number<br>
