@@ -7,9 +7,8 @@ WorldQuant University assignment templates
 
 ## List of templates
 
-1. Colaborative Review Task (CRT) templates
+1. Colaborative Review Task (CRT) templates (no longer needed)
     - Template version 1
-      (need to add description and preview for each template)
 
     - Template version 2
 
@@ -31,7 +30,8 @@ WorldQuant University assignment templates
 
     - Capstone project report
 
-
+4. Front Page New Platform Template
+    - [See instructions](./front_page_gwp.md) 
 
 ## Bonus features
 
