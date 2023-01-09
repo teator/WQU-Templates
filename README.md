@@ -16,7 +16,7 @@ WorldQuant University MScFE assignment templates
 2. Group work Project (GWP) templates
     - [Template version 1](WQU%20Template%20-%20Group%20Work%20Project%20v1) - template with single-column layout
     - [Template version 2](WQU%20Template%20-%20Group%20Work%20Project%20v2) - template with two-column layout
-    - [Template modular](WQU%20Template%20-%20Group%20Work%20Project%20vModular) - template with modula structure (single-column)
+    - [Template modular](WQU%20Template%20-%20Group%20Work%20Project%20Modular) - template with modular structure (single-column)
 
 
 3. Capstone Project templates
